@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>{% block title %}Disease Predictor{% endblock %}</title>
+    {% block icon %}
+    <link
+      rel="icon"
+      href="/static/icons/hospitalicon.jpg"
+      sizes="96x96"
+      type="image/png"
+    />
+    {% endblock %}
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <link
+      href="{{ url_for('static',filename = 'css/bootstrap.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static',filename = 'css/style.css')}}"
+      rel="stylesheet"
+    />
+
+    {% endblock %}
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto">
+          <a href="{{url_for('index')}}">Disease Prediction</a>
+        </h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('heart')}}">Heart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('tb')}}">TB</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    {% block content %}
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <h1>Welcome to Disease Prediction System</h1>
+      </div>
+    </section>
+    <!-- End Hero -->
+    {% endblock %}
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/main.js') }}"
+    ></script>
+  </body>
+</html>

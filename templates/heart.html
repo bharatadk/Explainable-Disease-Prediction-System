@@ -1,0 +1,144 @@
+{% extends 'home.html' %}
+
+
+{% block title %}Heart{% endblock %}
+
+{% block icon %}<link rel="icon" href="/static/icons/hearticon.jpg" sizes="96x96" type="image/png">
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <link href="{{ url_for('static',filename = 'css/heartstyle.css')}}" rel="stylesheet" />
+
+  </style>
+{% endblock %}
+
+{% block content %}
+<style>
+  
+  body{
+    background-image: url('static/img/heart_background.jpg');
+
+  }
+</style>
+ <center>
+  
+   
+ 
+  <h1>
+    <div style ="text-align:center">
+      <font color='white' size='30'>
+        Heart Disease Prediction
+      </font>
+    </div>
+  </h1>
+ 
+  <div class="bg-image"></div>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-sm-6 mx-auto">
+          <form class="" action="{{url_for('heart_predict')}}" method="post">
+
+            <div class="form-group">
+              <label for="age" class="ph-area">Enter Age :</label>
+              <input type="number" min="0" name="age" id="age" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sex" class="ph-area">Select Sex :</label>
+              <select class="form-control" name="sex" required="required">
+                <option hidden value="" disabled selected></option>
+                <option value="1">Male (1) </option>
+                <option value="0">Female (0) </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cp" class="ph-area">Select Chest Pain Type(cp) :</label>
+              <select class="form-control chosenn" name="cp" required="required">
+                <option hidden value="" disabled selected></option>
+                <option value="0">Typical Angina (0) </option>
+                <option value="1">Atypical Angina (1) </option>
+                <option value="2">Non Anginal Pain (2) </option>
+                <option value="3">Asymptomatic (3) </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="trestbps" class="ph-area">Enter Resting Blood Pressure (mm Hg)(bps) :</label>
+              <input type="number" name="bps" min="0" id="bps" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="chol" class="ph-area">Enter Serum Cholestoral (mg/dl)(ch) :</label>
+              <input type="number" name="ch" min="0"  id="ch" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="fbs" class="ph-area">Is Fasting Blood Sugar > 120 mg/dl(fbs) :</label>
+              <select class="form-control" name="fbs" required="required">
+                <option hidden value="" disabled selected></option>
+                <option value="1">Yes (1) </option>
+                <option value="0">No (0) </option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="ecg" class="ph-area">Resting Electrocardiograph (ecg) :</label>
+              <select class="form-control chosenn" name="ecg" required="required">
+                <option hidden value="" disabled selected></option>
+                <option value="0">Normal (0) </option>
+                <option value="1">Abnormal (1) </option>
+                <option value="2">Probable (2) </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mhr" class="ph-area">Enter Maximum Heart Rate Achieved (mhr) :</label>
+              <input type="number" name="mhr" min="0" id="mhr" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="ex" class="ph-area">Does Exercise Induced Angina (ex) :</label>
+              <select class="form-control" name="ex" required="required">
+                <option hidden value="" disabled selected></option>
+                <option value="1">Yes (1) </option>
+                <option value="0">No (0) </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="op" class="ph-area">Enter Oldpeak(op) :</label>
+              <input type="text" name="op" id="op" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="slp" class="ph-area">Select ST slope (slp)</label>
+              <select class="form-control chosenn" name="slp" required="required">
+                <option hidden value="" disabled selected></option>
+                <option value="0">Upsloping (0)</option>
+                <option value="1">Flat (1) </option>
+                <option value="2">Downsloping (2) </option>
+              </select>
+            </div>
+
+          <div class="form-group-btn">
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+</center>
+
+{% endblock %}
+
+
+
+
+

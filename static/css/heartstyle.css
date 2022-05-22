@@ -1,0 +1,83 @@
+div.wrapper {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  outline: none;
+  /* height: 40px; */
+  color: #fff;
+  width: 510px;
+  margin: 2% auto;
+  padding: 8px 0 0 0;
+  border-radius: 6px;
+}
+h1 {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+.form-group {
+  color: black;
+}
+label{
+  margin-top: 5px;
+}
+
+.form-group-btn {
+  padding: 10px;
+}
+.btn-primary {
+  border-radius: 4px;
+  padding: 10px;
+  width: 49.4%;
+}
+
+.form-control:focus + .ph-area,
+.form-control:valid + .ph-area {
+  font-size: 80%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1 !important;
+  background-color: green;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+#facilities h1 {
+  font-weight: 900;
+  font-size: 34px;
+  padding-bottom: 5px;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+}
+
+.title p {
+  font-size: 20px;
+}
+
+.card-body {
+  box-shadow: 0 0 20px 7px #6334ba1a;
+}
+
+.card {
+  margin: 15px 5px;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+}
+
+/*****End Facilities Css****/

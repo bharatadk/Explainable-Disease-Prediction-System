@@ -1,0 +1,47 @@
+{% extends 'home.html' %}
+
+{% block title %}Heart{% endblock %}
+
+{% block icon %}<link rel="icon" href="/static/icons/hearticon.jpg" sizes="96x96" type="image/png">
+{% endblock %}
+
+{% block content %}
+
+<style>
+  body{
+    background-image: url('static/img/heart_background_blur.jpg');background-size: cover;background-repeat: no-repeat;
+  }
+</style>
+
+  <center>
+
+  
+    <div><br><br></div>
+    <h3>
+        <div style ="text-align:center">
+          <font color='white'>
+            Heart Disease Prediction 
+          </font>
+        </div>
+          <h2 style="color: rgb(255, 255, 255);"><br>Model's Prediction : <i style="color:rgb(255, 102, 0);font-size:xxx-large"> {{prediction}} </i></h2>
+      </h3>
+      <br>
+
+      <div>
+        <img src="{{url_for('static', filename='shap_img.svg')}}" height="800px" width="800px">
+      </div>
+    
+</center>
+
+
+{% endblock %}
+
+</html>
+
+
+
+
+
+
+
+
