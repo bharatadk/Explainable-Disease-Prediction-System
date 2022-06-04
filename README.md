@@ -26,4 +26,4 @@ Explainable Disease Prediction System is an application which uses machine Learn
   <li><a href ="https://github.com/Anuj-Gupta4">Anuj Gupta</a></li>
   <li>Bhoopesh B.Tamang</li>
  </ul>
-## Thanks for visiting 👏👏👏:
+ # Thanks for visiting 👏👏👏:
