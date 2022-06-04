@@ -9,7 +9,7 @@ Explainable Disease Prediction System is an application which uses machine Learn
 ![tb-bg](https://github.com/bharatadk/Explainable-Disease-Prediction-System/blob/main/gifs/tb.gif)
 
 # Tools Used ⚒️:
-<ul>
+
   <li>Numpy</li>
   <li>Pandas</li>
   <li>Matplotlib</li>
@@ -20,10 +20,10 @@ Explainable Disease Prediction System is an application which uses machine Learn
   <li>Shapely</li>
 
 # Team Members 🧑‍🦱👨‍🦱👨‍🦰👨:
-<ul>
+
   <li><a href ="https://github.com/bharatadk">Me ( Bharat Adhikari ) </a></li>
   <li><a href ="https://github.com/Ayush85">Ayush Shrestha</a></li>
   <li><a href ="https://github.com/Anuj-Gupta4">Anuj Gupta</a></li>
   <li>Bhoopesh B.Tamang</li>
- </ul>
+ 
  # Thanks for visiting 👏👏👏:
