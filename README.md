@@ -18,7 +18,7 @@ Explainable Disease Prediction System is an application which uses machine Learn
   <li>Jupyter Notebook</li>
   <li>Tensorflow 2.8</li>
   <li>Shapely</li>
-</ul>
+
 # Team Members 🧑‍🦱👨‍🦱👨‍🦰👨:
 <ul>
   <li><a href ="https://github.com/bharatadk">Me ( Bharat Adhikari ) </a></li>
